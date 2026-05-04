@@ -115,6 +115,10 @@ plugins = ["pydantic.mypy"]
 module = ["tests.*", "evals.*"]
 disallow_untyped_defs = false
 
+[[tool.mypy.overrides]]
+module = ["app.main", "app.api.*", "mcp_server.*"]
+disallow_untyped_decorators = false
+
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
 testpaths = ["tests"]
