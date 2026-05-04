@@ -1,0 +1,58 @@
+# --- macOS / IDE ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# --- Python (uv) ---
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+build/
+dist/
+.python-version
+
+# --- Node / frontend ---
+node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+
+# --- Terraform ---
+# .terraform/ holds provider plugins (machine-specific, large).
+# *.tfstate is sensitive (contains secrets in plaintext) and now lives in S3 anyway.
+# .terraform.lock.hcl IS committed (provider version pin); do NOT add it here.
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# --- Env / secrets ---
+.env
+.env.*
+!.env.example
+
+# --- LocalStack volume ---
+.localstack/
+volume/
+
+# --- Eval reports (large, regenerable) ---
+evals/reports/
+
+*.md
+!/README.md
