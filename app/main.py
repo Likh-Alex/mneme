@@ -12,5 +12,5 @@ app = FastAPI(title="mneme", version="0.1.0")
 
 
 @app.get("/health", tags=["meta"], summary="Liveness probe")
-async def health() -> HealthResponse:
+def health() -> HealthResponse:
     return HealthResponse(status="ok")
