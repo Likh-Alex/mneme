@@ -93,6 +93,7 @@ ignore = [
 "tests/**" = ["S", "PLR2004"]
 "evals/**" = ["S"]
 "alembic/**" = ["N"]
+"app/logging.py" = ["A005"]
 
 [tool.ruff.lint.isort]
 known-first-party = ["app", "mcp_server"]
