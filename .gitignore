@@ -56,3 +56,4 @@ evals/reports/
 
 *.md
 !/README.md
+/notes
